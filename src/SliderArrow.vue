@@ -14,12 +14,12 @@ export default {
       slideCount: this.slideCount,
     }
     if (this.type === 'previous') {
-      classes['slick-prev'] = true
+      classes['kh-slick-prev'] = true
       if (
         !this.infinite &&
         (this.currentSlide === 0 || this.slideCount <= this.slidesToShow)
       ) {
-        classes['slick-disabled'] = true
+        classes['kh-slick-disabled'] = true
         clickable = false
       }
 
@@ -32,9 +32,9 @@ export default {
         </button>
       )
     } else {
-      classes['slick-next'] = true
+      classes['kh-slick-next'] = true
       if (!canGoNext(this.$props)) {
-        classes['slick-disabled'] = true
+        classes['kh-slick-disabled'] = true
         clickable = false
       }
 
