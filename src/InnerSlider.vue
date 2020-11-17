@@ -582,9 +582,9 @@ export default {
   },
   render() {
     const className = {
-      'slick-slider': true,
-      'slick-initialized': true,
-      'slick-vertical': this.vertical,
+      'kh-slick-slider': true,
+      'kh-slick-initialized': true,
+      'kh-slick-vertical': this.vertical,
     }
     let trackProps = extractObject(this.spec, PROP_KEYS.TRACK)
     trackProps = filterUndefined({
@@ -684,7 +684,7 @@ export default {
         {!this.unslick ? prevArrow : ''}
         <div
           ref="list"
-          class={'slick-list'}
+          class={'kh-slick-list'}
           {...{ on: listOn }}
           style={listStyle}>
           <SliderTrack
@@ -703,7 +703,7 @@ export default {
 }
 </script>
 <style scoped>
-.slick-slider {
+.kh-slick-slider {
   position: relative;
 
   display: block;
@@ -720,7 +720,7 @@ export default {
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
-.slick-list {
+.kh-slick-list {
   position: relative;
 
   display: block;
@@ -735,10 +735,10 @@ export default {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.slick-list:focus {
+.kh-slick-list:focus {
   outline: none;
 }
-.slick-list.dragging {
+.kh-slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }

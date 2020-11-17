@@ -62,7 +62,7 @@ export default {
 }
 </script>
 <style scoped>
-.slick-arrow.slick-hidden {
+.kh-slick-arrow.slick-hidden {
   display: none;
 }
 </style>
