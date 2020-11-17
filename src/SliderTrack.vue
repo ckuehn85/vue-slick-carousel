@@ -208,7 +208,7 @@ export default {
     const slides = this.renderSlides(this.$props, this.$slots.default)
     return (
       <div
-        class={{ 'kh-slick-track': true, 'kh-slick-center': this.$props.centerMode }}
+        class={{'kh-slick-track': true, 'kh-slick-center': this.$props.centerMode }}
         style={this.trackStyle}>
         {slides}
       </div>
