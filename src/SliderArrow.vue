@@ -6,7 +6,7 @@ export default {
   name: 'SliderArrow',
   props: [...PROP_KEYS.ARROW, 'type'],
   render() {
-    let classes = { 'slick-arrow': true }
+    let classes = { 'kh-slick-arrow': true }
     let clickable = true
     let arrow
     let option = {
